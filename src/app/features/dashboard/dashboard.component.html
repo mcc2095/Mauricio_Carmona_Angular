@@ -1,0 +1,27 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <p>Categorías</p>
+        @if (showFiller) {
+        <p>Lorem, ipsum dolor sit amet consectetur.</p>
+        }
+        <button (click)="showFiller = !showFiller" mat-raised-button>
+            Alumnos
+        </button>
+        <button (click)="showFiller = !showFiller" mat-raised-button>
+            Cursos
+        </button>
+    </mat-drawer>
+
+    <div class="example-sidenav-content">
+        <mat-toolbar>
+            <button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+              <mat-icon>menu</mat-icon>
+            </button>
+            <span>Menú</span>
+        </mat-toolbar>
+
+        
+    </div>
+
+</mat-drawer-container>
+
